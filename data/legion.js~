@@ -1,0 +1,1 @@
+$("body").css("border", "solid 5px red");
