@@ -9,10 +9,7 @@ $(document).ready(function(){
         host = host.substring(0, end);
     }
          
-    //alert(host);
-    $("input[type='password']").each(function(){
-        var pass = hex_md5($(this).val() + host);
-        $(this).val(pass);
-        //alert(pass);
-    });
+    var input = $(':focus');
+    var pass = hex_md5(input.val() + host);
+    input.val(pass);
 });
